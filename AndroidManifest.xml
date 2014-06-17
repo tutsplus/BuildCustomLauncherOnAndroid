@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ah.hathi.simplelauncher"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        >
+        
+        <activity
+            android:name="ah.hathi.simplelauncher.HomeActivity"
+            android:label="Simple Launcher Home"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>         
+        </activity>
+        
+        <activity
+            android:name="ah.hathi.simplelauncher.AppsListActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >            
+        </activity>
+        
+    </application>
+
+</manifest>
